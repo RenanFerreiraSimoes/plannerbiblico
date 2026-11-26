@@ -2,12 +2,13 @@ import { LIVROS, type DiaPlano } from '../lib/plano'
 import type { Devocional } from './tipos'
 import { GENESIS } from './estudos/genesis'
 import { GENESIS_2 } from './estudos/genesis2'
+import { EXODO } from './estudos/exodo'
 
 export type { Devocional }
 
 // Quando criarmos Êxodo, Levítico etc., é só importar e juntar aqui:
 // const TODOS = { ...GENESIS, ...EXODO }
-const TODOS: Record<string, Devocional> = { ...GENESIS, ...GENESIS_2 }
+const TODOS: Record<string, Devocional> = { ...GENESIS, ...GENESIS_2, ...EXODO }
 
 // "Gn 4-6" (vários capítulos) ou "Rt 2" (um capítulo)
 export function chavePassagem(d: DiaPlano) {
