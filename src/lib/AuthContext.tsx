@@ -13,6 +13,7 @@ export interface Perfil {
   traducao: string
   inicio: string
   lembrete: string
+  lembreteAtivo?: boolean // lembrete diário por notificação
   foto?: string // foto de perfil (texto da imagem comprimida)
   tema?: string // id do tema visual
 }

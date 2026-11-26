@@ -8,6 +8,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
+      strategies: 'injectManifest',
+      srcDir: 'sw',
+      filename: 'sw.ts',
       registerType: 'autoUpdate',
       manifest: {
         name: '365 Dias com Deus — Meu Planner Bíblico',
@@ -21,16 +24,6 @@ export default defineConfig({
           { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },
           { src: '/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
-        ],
-      },
-      workbox: {
-        navigateFallback: '/index.html',
-        runtimeCaching: [
-          {
-            urlPattern: /\/biblia\/.*\.json$/,
-            handler: 'CacheFirst',
-            options: { cacheName: 'biblia', expiration: { maxEntries: 5 } },
-          },
         ],
       },
     }),
