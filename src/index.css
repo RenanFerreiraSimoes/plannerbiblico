@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blush-50: #fdf6f4;
+  --color-blush-100: #faeae6;
+  --color-blush-200: #f4d5cf;
+  --color-blush-300: #e9b8b0;
+  --color-blush-400: #d99a92;
+  --color-blush-500: #c47d76;
+  --color-blush-600: #a86059;
+  --color-marfim: #fbf7f2;
+  --color-nude: #efe3d6;
+  --color-ouro: #b8935a;
+  --color-tinta: #4a3b38;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-marfim);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer components {
+  .card {
+    @apply rounded-3xl bg-white/80 p-6 shadow-[0_8px_30px_rgba(196,125,118,0.10)] border border-blush-100;
+  }
+  .titulo {
+    @apply font-display text-3xl md:text-4xl text-blush-600;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-blush-500 px-6 py-3 text-sm font-medium text-white
+           transition hover:bg-blush-600 active:scale-[0.98] disabled:opacity-50;
+  }
+  .btn-suave {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-blush-200 bg-white px-5 py-2.5 text-sm
+           text-blush-600 transition hover:bg-blush-50;
+  }
+  .campo {
+    @apply w-full rounded-2xl border border-blush-200 bg-white px-4 py-3 outline-none transition focus:border-blush-400 focus:ring-2 focus:ring-blush-100;
+  }
+  .campo-mini {
+    @apply w-24 rounded-xl border border-blush-200 bg-white px-3 py-2 text-sm outline-none focus:border-blush-400;
+  }
+}
+
+.fade-in { animation: fade .5s ease both; }
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }

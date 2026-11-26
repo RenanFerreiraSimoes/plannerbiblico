@@ -1,0 +1,38 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function logado() {
+      return request.auth != null;
+    }
+
+    // administrador = existe um documento admins/{uid} com o uid de quem está logado
+    function ehAdmin() {
+      return logado() && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // tudo que é pessoal: só o dono
+    match /users/{uid}/{document=**} {
+      allow read, write: if logado() && request.auth.uid == uid;
+    }
+
+    // cada pessoa só consegue ler o próprio documento de admin (para o app saber se mostra o menu)
+    // ninguém grava pelo app, só pelo console
+    match /admins/{uid} {
+      allow read: if logado() && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // lista de contas (nome e e-mail): cada pessoa grava a sua, só o admin lê
+    match /contas/{uid} {
+      allow read: if ehAdmin();
+      allow write: if logado() && request.auth.uid == uid;
+    }
+
+    // cartas: a destinatária lê as suas, o admin lê e escreve todas
+    match /cartas/{id} {
+      allow read: if logado() && (resource.data.para == request.auth.uid || ehAdmin());
+      allow write: if ehAdmin();
+    }
+  }
+}
