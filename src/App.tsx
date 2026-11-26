@@ -7,6 +7,7 @@ import Hoje from './pages/Hoje'
 import Dia from './pages/Dia'
 import Plano from './pages/Plano'
 import Calendario from './pages/Calendario'
+import Biblioteca from './pages/Biblioteca'
 import Diario from './pages/Diario'
 import Oracoes from './pages/Oracoes'
 import Favoritos from './pages/Favoritos'
@@ -28,6 +29,7 @@ function Rotas() {
         <Route path="dia/:n" element={<Dia />} />
         <Route path="plano" element={<Plano />} />
         <Route path="calendario" element={<Calendario />} />
+        <Route path="biblioteca" element={<Biblioteca />} />
         <Route path="diario" element={<Diario />} />
         <Route path="oracoes" element={<Oracoes />} />
         <Route path="favoritos" element={<Favoritos />} />

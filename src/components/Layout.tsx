@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom'
-import { Home, BookOpen, ListChecks, Mail, Settings, Pencil, Heart, Menu, Send, CalendarDays, Star, Footprints } from 'lucide-react'
+import { Home, BookOpen, ListChecks, Mail, Settings, Pencil, Heart, Menu, Send, CalendarDays, Star, Footprints, Library } from 'lucide-react'
 import { Ramo } from './Ramo'
 import { useAuth } from '../lib/AuthContext'
 import { numeroDiaHoje } from '../pages/Hoje'
@@ -11,6 +11,7 @@ const desktop: Item[] = [
   { to: '/hoje', rotulo: 'Devocional de hoje', Icone: BookOpen },
   { to: '/plano', rotulo: 'Plano de 365 dias', Icone: ListChecks },
   { to: '/calendario', rotulo: 'Calendário', Icone: CalendarDays },
+  { to: '/biblioteca', rotulo: 'Biblioteca', Icone: Library },
   { to: '/diario', rotulo: 'Meu diário', Icone: Pencil },
   { to: '/oracoes', rotulo: 'Orações', Icone: Heart },
   { to: '/favoritos', rotulo: 'Favoritos', Icone: Star },
@@ -29,7 +30,7 @@ const mobile: Item[] = [
   { to: '/mais', rotulo: 'Mais', Icone: Menu },
 ]
 
-const DENTRO_DE_MAIS = ['/mais', '/plano', '/calendario', '/favoritos', '/jornada', '/cartas', '/config', '/admin']
+const DENTRO_DE_MAIS = ['/mais', '/plano', '/calendario', '/biblioteca', '/favoritos', '/jornada', '/cartas', '/config', '/admin']
 
 function ativo(to: string, p: string, diaAtual: number, diaAberto: number | null) {
   if (to === '/') return p === '/'
@@ -46,18 +47,19 @@ export default function Layout() {
 
   const diaAberto = pathname.startsWith('/dia') ? Number(n) : null
   const diaAtual = perfil ? numeroDiaHoje(perfil.inicio) : 0
-  const menuDesktop = admin ? [...desktop.slice(0, 9), itemAdmin, desktop[9]] : desktop
+  // "Escrever cartas" entra sempre antes do último item (Ajustes)
+  const menuDesktop = admin ? [...desktop.slice(0, -1), itemAdmin, ...desktop.slice(-1)] : desktop
 
   return (
     <div className="min-h-screen">
       {/* menu lateral (computador) */}
-      <aside className="fixed inset-y-0 left-0 hidden w-64 flex-col border-r border-blush-100 bg-white/70 p-6 md:flex">
+      <aside className="fixed inset-y-0 left-0 hidden w-64 flex-col overflow-y-auto border-r border-blush-100 bg-white/70 p-6 md:flex">
         <h1 className="font-display text-3xl leading-tight text-blush-600">365 Dias<br />com Deus</h1>
         <Ramo className="mt-2 w-24 text-ouro" />
         <nav className="mt-8 flex flex-col gap-1">
           {menuDesktop.map(({ to, rotulo, Icone }) => (
             <Link key={to} to={to}
-              className={`flex items-center gap-3 rounded-2xl px-4 py-3 text-sm transition ${
+              className={`flex items-center gap-3 rounded-2xl px-4 py-2.5 text-sm transition ${
                 ativo(to, pathname, diaAtual, diaAberto) ? 'bg-blush-100 font-medium text-blush-600' : 'text-tinta/70 hover:bg-blush-50'}`}>
               <Icone size={18} strokeWidth={1.6} /> {rotulo}
             </Link>

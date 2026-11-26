@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
-import { ListChecks, CalendarDays, Star, Footprints, Mail, Settings, Send, ChevronRight } from 'lucide-react'
+import { ListChecks, CalendarDays, Library, Star, Footprints, Mail, Settings, Send, ChevronRight } from 'lucide-react'
 import { useAuth } from '../lib/AuthContext'
 
 const links = [
   { to: '/plano', Icone: ListChecks, titulo: 'Plano de 365 dias', desc: 'Todos os dias de leitura, livro por livro' },
   { to: '/calendario', Icone: CalendarDays, titulo: 'Calendário', desc: 'Mês a mês da sua jornada' },
+  { to: '/biblioteca', Icone: Library, titulo: 'Biblioteca de estudos', desc: 'Uma introdução a cada livro da Bíblia' },
   { to: '/favoritos', Icone: Star, titulo: 'Favoritos', desc: 'Versículos e devocionais guardados' },
   { to: '/jornada', Icone: Footprints, titulo: 'Minha jornada', desc: 'Progresso, sequências e conquistas' },
   { to: '/cartas', Icone: Mail, titulo: 'Cartas para você', desc: 'Mensagens que chegam ao longo do ano' },
@@ -15,7 +16,8 @@ const itemAdmin = { to: '/admin', Icone: Send, titulo: 'Escrever cartas', desc: 
 
 export default function Mais() {
   const { admin } = useAuth()
-  const todos = admin ? [...links.slice(0, 4), itemAdmin, ...links.slice(4)] : links
+  // "Escrever cartas" entra sempre antes do último item (Ajustes)
+  const todos = admin ? [...links.slice(0, -1), itemAdmin, ...links.slice(-1)] : links
 
   return (
     <div className="space-y-5">
