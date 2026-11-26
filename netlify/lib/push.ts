@@ -1,11 +1,6 @@
-import { createRequire } from 'node:module'
+import * as webpush from 'web-push'
 import { cert, getApps, initializeApp } from 'firebase-admin/app'
 import { getFirestore, type Firestore } from 'firebase-admin/firestore'
-
-
-// O pacote web-push é antigo (CommonJS), então é carregado assim para funcionar na Netlify
-const require = createRequire(import.meta.url)
-const webpush: typeof import('web-push') = require('web-push')
 
 
 const OBRIGATORIAS = [
