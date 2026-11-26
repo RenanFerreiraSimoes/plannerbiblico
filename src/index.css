@@ -16,6 +16,63 @@
   --font-sans: "Inter", system-ui, sans-serif;
 }
 
+/* ---------- Temas: cada um só troca as cores ---------- */
+html[data-tema='lavanda'] {
+  --color-blush-50: #f8f6fc;
+  --color-blush-100: #efeaf8;
+  --color-blush-200: #ddd3f0;
+  --color-blush-300: #c5b5e3;
+  --color-blush-400: #a893d1;
+  --color-blush-500: #8b72b8;
+  --color-blush-600: #6f58a0;
+  --color-marfim: #faf8fc;
+  --color-nude: #e9e3f0;
+  --color-ouro: #b8935a;
+  --color-tinta: #3d3748;
+}
+
+html[data-tema='salvia'] {
+  --color-blush-50: #f4f8f4;
+  --color-blush-100: #e6efe6;
+  --color-blush-200: #cfe0cf;
+  --color-blush-300: #aecbae;
+  --color-blush-400: #86ad88;
+  --color-blush-500: #5f8c62;
+  --color-blush-600: #4a7050;
+  --color-marfim: #f8faf5;
+  --color-nude: #e6ebdc;
+  --color-ouro: #b8935a;
+  --color-tinta: #34423a;
+}
+
+html[data-tema='ceu'] {
+  --color-blush-50: #f3f8fc;
+  --color-blush-100: #e3eef7;
+  --color-blush-200: #c9ddee;
+  --color-blush-300: #a5c6e0;
+  --color-blush-400: #7fabce;
+  --color-blush-500: #5586b0;
+  --color-blush-600: #3f6b8f;
+  --color-marfim: #f7fafc;
+  --color-nude: #e3ebf2;
+  --color-ouro: #b8935a;
+  --color-tinta: #2f3f4d;
+}
+
+html[data-tema='cappuccino'] {
+  --color-blush-50: #faf6f1;
+  --color-blush-100: #f3eae0;
+  --color-blush-200: #e6d6c3;
+  --color-blush-300: #d5bc9f;
+  --color-blush-400: #c0a07c;
+  --color-blush-500: #a8855f;
+  --color-blush-600: #8a6b49;
+  --color-marfim: #fbf8f3;
+  --color-nude: #efe3d6;
+  --color-ouro: #c4a05a;
+  --color-tinta: #4a3b30;
+}
+
 body {
   background: var(--color-marfim);
   color: var(--color-tinta);
@@ -25,7 +82,8 @@ body {
 
 @layer components {
   .card {
-    @apply rounded-3xl bg-white/80 p-6 shadow-[0_8px_30px_rgba(196,125,118,0.10)] border border-blush-100;
+    @apply rounded-3xl bg-white/80 p-6 border border-blush-100;
+    box-shadow: 0 8px 30px color-mix(in srgb, var(--color-blush-500) 10%, transparent);
   }
   .titulo {
     @apply font-display text-3xl md:text-4xl text-blush-600;

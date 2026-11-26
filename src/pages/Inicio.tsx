@@ -7,6 +7,7 @@ import { textoVersiculo, traducaoEfetiva } from '../lib/biblia'
 import { dataLonga, hojeISO, diffDias } from '../lib/datas'
 import { Ramo } from '../components/Ramo'
 import CartaDeHoje from '../components/CartaDeHoje'
+import Avatar from '../components/Avatar'
 
 // [livro, capítulo, versículo]
 const VERSICULOS: [string, number, number][] = [
@@ -39,10 +40,13 @@ export default function Inicio() {
 
   return (
     <div className="space-y-6">
-      <header>
-        <p className="text-sm capitalize text-tinta/60">{dataLonga(hojeISO())}</p>
-        <h1 className="titulo">Olá, {perfil!.nome}</h1>
-        <Ramo className="mt-1 w-28 text-ouro" />
+      <header className="flex items-center gap-4">
+        <Avatar foto={perfil!.foto} nome={perfil!.nome} tamanho={68} />
+        <div>
+          <p className="text-sm capitalize text-tinta/60">{dataLonga(hojeISO())}</p>
+          <h1 className="titulo">Olá, {perfil!.nome}</h1>
+          <Ramo className="mt-1 w-28 text-ouro" />
+        </div>
       </header>
 
       <div className="card text-center">

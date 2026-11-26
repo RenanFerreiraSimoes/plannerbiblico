@@ -6,8 +6,16 @@ import {
 import { doc, onSnapshot, setDoc, serverTimestamp } from 'firebase/firestore'
 import { auth, db } from './firebase'
 import { hojeISO } from './datas'
+import { aplicarTema, temaSalvo } from './temas'
 
-export interface Perfil { nome: string; traducao: string; inicio: string; lembrete: string }
+export interface Perfil {
+  nome: string
+  traducao: string
+  inicio: string
+  lembrete: string
+  foto?: string // foto de perfil (texto da imagem comprimida)
+  tema?: string // id do tema visual
+}
 
 interface Ctx {
   user: User | null
@@ -23,6 +31,9 @@ interface Ctx {
 
 const AuthCtx = createContext<Ctx>(null as unknown as Ctx)
 export const useAuth = () => useContext(AuthCtx)
+
+// Abre o app já na cor que ficou guardada neste aparelho
+document.documentElement.dataset.tema = temaSalvo()
 
 const padrao = (nome: string): Perfil => ({ nome, traducao: 'acf', inicio: hojeISO(), lembrete: '07:00' })
 
@@ -47,6 +58,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       else setDoc(ref, { ...padrao(user.displayName ?? 'Querida'), criadoEm: serverTimestamp() })
     })
   }, [user])
+
+  // tema visual escolhido no perfil
+  useEffect(() => {
+    if (perfil) aplicarTema(perfil.tema)
+  }, [perfil?.tema, !!perfil])
 
   // é administrador? (existe o documento admins/{uid})
   useEffect(() => {
