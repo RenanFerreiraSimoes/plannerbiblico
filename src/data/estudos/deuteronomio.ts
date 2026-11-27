@@ -69,16 +69,17 @@ export const DEUTERONOMIO: Record<string, Devocional> = {
       'Senhor, quero amar-te de todo o meu coração, de toda a minha alma e de todas as minhas forças. Ensina-me a trazer a tua Palavra para a minha rotina, a falar de ti com simplicidade e a não me esquecer de ti nos dias bons. Obrigada porque tu estás perto de quem te invoca. Em nome de Jesus, amém.',
   },
 
-  'Dt 7-9': {
+  'Dt 7-10': {
     tema: 'Escolhidos por amor, e não por mérito',
     contextoHistorico:
-      'Israel está prestes a entrar em uma terra habitada por vários povos, com cultos que incluíam imagens, prostituição ritual e, em alguns casos, sacrifícios de crianças. Moisés explica ao povo como Deus quer que eles ajam: sem alianças com esses cultos e sem se misturarem a eles, para que o coração do povo não se desviasse. A linguagem de “destruir” as nações, comum nos textos de guerra do mundo antigo, se refere a um contexto específico, ligado ao juízo de Deus sobre aquelas culturas e à proteção da fé de Israel.',
+      'Israel está prestes a entrar em uma terra habitada por vários povos, com cultos que incluíam imagens, prostituição ritual e, em alguns casos, sacrifícios de crianças. Moisés explica ao povo como Deus quer que eles ajam: sem alianças com esses cultos e sem se misturarem a eles, para que o coração do povo não se desviasse. A linguagem de “destruir” as nações, comum nos textos de guerra do mundo antigo, se refere a um contexto específico, ligado ao juízo de Deus sobre aquelas culturas e à proteção da fé de Israel. No capítulo 10, Moisés lembra também que, depois do bezerro de ouro, Deus deu novas tábuas da lei, guardadas na arca, e separou a tribo de Levi para o serviço.',
     contextoBiblico:
-      'O capítulo 8 contém o versículo “Nem só de pão viverá o homem, mas de tudo o que procede da boca do Senhor” (8:3), que Jesus citou ao ser tentado no deserto (Mateus 4:4). O capítulo 9 recorda o episódio do bezerro de ouro, de Êxodo 32, e a intercessão de Moisés pelo povo. A ideia de que Deus escolhe por amor e graça, e não por mérito, aparece também em Efésios 2:8-9.',
+      'O capítulo 8 contém o versículo “Nem só de pão viverá o homem, mas de tudo o que procede da boca do Senhor” (8:3), que Jesus citou ao ser tentado no deserto (Mateus 4:4). O capítulo 9 recorda o episódio do bezerro de ouro, de Êxodo 32, e a intercessão de Moisés pelo povo. A ideia de que Deus escolhe por amor e graça, e não por mérito, aparece também em Efésios 2:8-9. A frase “circuncidai o vosso coração” (10:16) mostra que o sinal externo da aliança sempre apontou para uma mudança interior; Jeremias 4:4 e Romanos 2:28-29 retomam essa ideia, e o cuidado com o órfão e a viúva reaparece em Tiago 1:27.',
     explicacao: [
       'Deuteronômio 7: Moisés diz que Israel é um povo santo, “o seu povo próprio”, mas explica o porquê: “O Senhor não tomou prazer em vós, nem vos escolheu, porque fôsseis mais numerosos do que todos os povos, pois éreis o menos de todos os povos; mas porque o Senhor vos amava” (7:7-8). A escolha vem do amor dele, e não de algum mérito de Israel. Deus é fiel, “que guarda a aliança e a misericórdia até mil gerações aos que o amam”. Por causa disso, Israel não devia fazer alianças nem casamentos que levassem o coração para outros deuses. Também é dito que a conquista seria “pouco a pouco”, para que o povo não fosse tomado pelo medo ou pela pressa.',
       'Deuteronômio 8: Moisés pede que o povo se lembre dos quarenta anos no deserto. Deus os humilhou, provou e deixou ter fome para ensinar que “nem só de pão viverá o homem”. Ao mesmo tempo, as roupas não envelheceram e os pés não incharam, ou seja, ele cuidou deles na prova. Deus disciplina “como um homem castiga a seu filho”. Depois, Moisés descreve a terra boa que os espera, com água, trigo, cevada e minerais, e adverte: quando estiver satisfeito, não pense “A minha força e o poder da minha mão me adquiriram esta riqueza”. Deus é quem dá força para se conseguir riqueza.',
       'Deuteronômio 9: Moisés quebra qualquer orgulho: a conquista não será por causa da justiça de Israel, mas “pela maldade destas nações” e para cumprir a promessa feita aos pais. Israel é descrito como “povo de dura cerviz”, ou seja, teimoso. Moisés então lembra o bezerro de ouro, e como se prostrou quarenta dias e quarenta noites diante de Deus para interceder. Ele pede a Deus que se lembre de seus servos Abraão, Isaque e Jacó, e da honra do nome do Senhor. A oração de Moisés mostra alguém que ama o povo mesmo conhecendo seus erros.',
+      'Deuteronômio 10: depois da intercessão, Deus ouve de novo. Ele manda talhar novas tábuas, Moisés faz uma arca de madeira de acácia para guardá-las, e a tribo de Levi é separada para carregar a arca e servir, tendo o próprio Senhor como herança. Então vem a pergunta central: “Que é que o Senhor teu Deus pede de ti, senão que temas ao Senhor teu Deus, que andes em todos os seus caminhos, e o ames, e sirvas ao Senhor teu Deus com todo o teu coração e com toda a tua alma?” (10:12). E o convite: “Circuncidai, pois, o prepúcio do vosso coração, e não mais endureçais a vossa cerviz.” Deus é “Deus dos deuses e Senhor dos senhores”, que não faz acepção de pessoas, faz justiça ao órfão e à viúva e ama o estrangeiro. Por isso Israel também devia amar o estrangeiro, lembrando que já foi estrangeiro no Egito.',
     ],
     ensinamentos: [
       'Deus nos ama por quem ele é, e não por quem nós somos: a escolha dele é graça.',
@@ -86,9 +87,10 @@ export const DEUTERONOMIO: Record<string, Devocional> = {
       'Passar por deserto e provação pode ser uma forma de Deus nos ensinar a depender dele.',
       'A prosperidade traz o risco de esquecer de onde veio a força: tudo vem de Deus.',
       'A intercessão de quem ama o povo, mesmo conhecendo suas falhas, é uma forma poderosa de servir.',
+      'O que Deus pede é um coração entregue, e esse amor aparece no cuidado com quem está de fora.',
     ],
     aplicacao:
-      'Se alguma vez você se sentiu “não boa o bastante” para Deus, lembre-se: Israel era o menor dos povos, e foi escolhido por amor. Do mesmo jeito, quando algo der certo na sua vida, reconheça de quem veio a força. E pense em alguém que anda se afastando ou errando: como Moisés, você pode orar por essa pessoa com amor, sem fingir que o erro não existe.',
+      'Se alguma vez você se sentiu “não boa o bastante” para Deus, lembre-se: Israel era o menor dos povos, e foi escolhido por amor. Do mesmo jeito, quando algo der certo na sua vida, reconheça de quem veio a força. Pense em alguém que anda se afastando ou errando: como Moisés, você pode orar por essa pessoa com amor, sem fingir que o erro não existe. E olhe para quem está “de fora” perto de você, como uma pessoa nova na igreja ou alguém sozinho: como você pode acolher?',
     reflexao:
       'Deus não escolheu os melhores; ele escolheu por amor e depois ensinou a caminhar.',
     perguntas: [
@@ -96,112 +98,115 @@ export const DEUTERONOMIO: Record<string, Devocional> = {
       'Quando algo vai bem, eu reconheço de onde veio a força?',
       'O que o meu “deserto” me ensinou sobre depender de Deus?',
       'Por quem eu posso interceder hoje, mesmo sabendo dos erros dessa pessoa?',
+      'Quem ao meu redor é “estrangeiro” e precisa de acolhida?',
     ],
     vivendo:
-      'Faça uma oração de gratidão por três coisas que você tem e que não foram resultado só do seu esforço. Depois ore pelo nome de alguém que está se afastando de Deus e peça misericórdia por essa pessoa.',
+      'Faça uma oração de gratidão por três coisas que você tem e que não foram resultado só do seu esforço. Depois ore pelo nome de alguém que está se afastando de Deus e peça misericórdia por essa pessoa. Se puder, faça também um gesto de acolhida a alguém que esteja de fora.',
     oracao:
-      'Pai, obrigada porque me amaste antes de eu ter algo para oferecer. Livra-me do orgulho de achar que as minhas conquistas são só minhas. Ensina-me a aprender com os desertos e a interceder por quem eu amo, mesmo quando erram. Em nome de Jesus, amém.',
+      'Pai, obrigada porque me amaste antes de eu ter algo para oferecer. Livra-me do orgulho de achar que as minhas conquistas são só minhas. Amolece o meu coração onde ele estiver duro. Ensina-me a aprender com os desertos, a interceder por quem eu amo, mesmo quando erram, e a acolher quem está de fora. Em nome de Jesus, amém.',
   },
 
-  'Dt 10-12': {
-    tema: 'O que Deus pede: um coração entregue e uma alegria obediente',
+  'Dt 11-13': {
+    tema: 'Dependência diária, adoração alegre e um amor que não se divide',
     contextoHistorico:
-      'Moisés continua lembrando a história: depois do bezerro de ouro, Deus deu novas tábuas da lei, e a arca foi feita para guardá-las. Os povos de Canaã tinham muitos altares espalhados em montes e sob árvores. Israel receberia a ordem de adorar a Deus no lugar que ele escolhesse, para evitar misturas. Naquele tempo, a vida de uma família se baseava na agricultura, e a chuva era vista como bênção direta de Deus, diferente do Egito, onde a terra era irrigada com trabalho humano.',
+      'Moisés conclui o apelo ao amor e à obediência e começa a explicar como o povo deveria viver na terra. Ele compara o Egito, onde a terra era irrigada com trabalho humano, à terra prometida, que dependeria da chuva do céu, algo visto naquele tempo como bênção direta de Deus. Os povos de Canaã tinham muitos altares em montes e sob árvores, e Israel receberia a ordem de adorar no lugar que Deus escolhesse, para evitar misturas. Os reis da época costumavam firmar tratados de fidelidade com seus súditos, e a idolatria era vista como traição ao próprio rei. As penas do capítulo 13 pertencem à lei civil de Israel daquele tempo.',
     contextoBiblico:
-      'A frase “circuncidai o prepúcio do vosso coração” (10:16) mostra que o sinal externo da aliança sempre apontou para uma mudança interior; Paulo retoma essa ideia em Romanos 2:28-29. Jeremias 4:4 usa a mesma imagem. O cuidado com o estrangeiro, o órfão e a viúva (10:18-19) aparece em toda a Bíblia e é retomado por Tiago 1:27. No capítulo 12, quando se fala de “o lugar que o Senhor escolher”, o texto aponta a centralidade da presença de Deus na adoração, tema que Jesus retoma em João 4:21-24.',
+      'Em Deuteronômio 11:26-29, a bênção e a maldição seriam proclamadas simbolicamente nos montes Gerizim e Ebal, o que se cumpre em Josué 8. Sobre o lugar da adoração, Jesus diz em João 4:21-24 que o Pai procura adoradores “em espírito e em verdade”. O alerta do capítulo 13 sobre sinais e profetas é retomado por Jesus, que fala de falsos profetas e de conhecê-los “pelos seus frutos” (Mateus 7:15-20), e por 1 João 4:1, que manda “provar os espíritos”.',
     explicacao: [
-      'Deuteronômio 10: o capítulo faz uma das perguntas mais importantes do livro: “Que é que o Senhor teu Deus pede de ti, senão que temas ao Senhor teu Deus, que andes em todos os seus caminhos, e o ames, e sirvas ao Senhor teu Deus com todo o teu coração e com toda a tua alma?” (10:12). Em seguida vem o convite: “Circuncidai, pois, o prepúcio do vosso coração, e não mais endureçais a vossa cerviz.” Deus é descrito como “Deus dos deuses e Senhor dos senhores”, que não faz acepção de pessoas e que “faz justiça ao órfão e à viúva, e ama o estrangeiro”. E logo depois: “Amai, pois, o estrangeiro”, porque Israel também foi estrangeiro no Egito.',
-      'Deuteronômio 11: Moisés insiste em amar e guardar os mandamentos. Ele compara a terra prometida com o Egito: lá o povo regava a lavoura “com o pé”, com trabalho, mas na nova terra a chuva vem do céu, “terra de que o Senhor teu Deus tem cuidado”. Ou seja, viver ali exigiria confiança diária, e não só esforço. Moisés põe diante do povo uma bênção e uma maldição, que seriam proclamadas simbolicamente nos montes Gerizim e Ebal, para lembrar que as escolhas têm consequências.',
-      'Deuteronômio 12: Israel devia derrubar os altares dos povos da terra e não adorar a Deus “do jeito deles”. A adoração seria no lugar que Deus escolhesse para pôr o seu nome, e ali o povo levaria suas ofertas, incluindo os dízimos e ofertas voluntárias que a lei de Israel descrevia. Repare no tom: “ali comereis diante do Senhor vosso Deus, e vos alegrareis” (12:7). A adoração devia ser acompanhada de alegria, com a família e com o levita, que não tinha terra. Moisés avisa também que, quando o povo estiver estabelecido, não deveria fazer “cada um o que parece bem aos seus olhos” (12:8), uma frase que o livro de Juízes vai retomar como retrato de tempos difíceis.',
+      'Deuteronômio 11: Moisés insiste em amar o Senhor e guardar seus mandamentos, e lembra que os filhos que nasceram no deserto viram com os próprios olhos as obras de Deus. A terra que os espera não é como o Egito, onde se regava “com o pé”, com esforço. É uma terra “de que o Senhor teu Deus tem cuidado”, que bebe da chuva do céu. Viver ali exigiria confiança diária, e não só trabalho. Moisés coloca diante do povo uma bênção e uma maldição, para lembrar que as escolhas têm consequências. E repete: as palavras de Deus devem estar no coração, nas casas e nas portas.',
+      'Deuteronômio 12: Israel devia derrubar os altares dos povos da terra e não adorar a Deus “do jeito deles”. A adoração seria no lugar que Deus escolhesse para pôr o seu nome, e ali o povo levaria suas ofertas, incluindo as que a lei de Israel descrevia. Repare no tom: “ali comereis diante do Senhor vosso Deus, e vos alegrareis” (12:7). A adoração devia ser acompanhada de alegria, com a família e com o levita, que não tinha terra. Moisés avisa também que, quando o povo estivesse estabelecido, não deveria fazer “cada um o que parece bem aos seus olhos” (12:8), uma frase que o livro de Juízes vai retomar como retrato de tempos difíceis. Há ainda um cuidado com a vida: o sangue não devia ser comido, porque “o sangue é a vida”.',
+      'Deuteronômio 13: aqui há um alerta sério. Se surgir alguém com sinais e maravilhas que convide o povo a seguir outros deuses, não se deve ouvi-lo, pois “o Senhor vosso Deus vos prova, para saber se amais o Senhor vosso Deus”. O critério não é só o milagre, mas se a mensagem leva para mais perto ou para longe do Deus verdadeiro. O mesmo vale para um amigo próximo ou um familiar. As punições descritas fazem parte da lei civil de Israel, e é importante lê-las sem tirar delas um modelo para hoje. O que continua valendo é o princípio: nenhum sinal, pessoa ou afeto deve nos afastar de Deus. No Novo Testamento, o combate à falsa doutrina se dá com verdade, firmeza e amor.',
     ],
     ensinamentos: [
-      'Deus pede, antes de tudo, um coração que o tema, o ame e o sirva por inteiro.',
-      'A mudança que Deus quer é interior: “circuncidar o coração” é abrir mão da dureza e da teimosia.',
-      'Deus ama o estrangeiro, o órfão e a viúva, e quem o segue deve fazer o mesmo.',
       'Viver pela fé é depender de Deus a cada dia, como a terra que depende da chuva.',
+      'As escolhas têm consequências: o caminho da obediência traz bênção, e o do afastamento traz perda.',
       'A adoração a Deus deve ser feita do jeito que ele indicou, com alegria, e não conforme o que parece certo aos nossos olhos.',
+      'Deus quer que a família toda e os mais vulneráveis participem da alegria da adoração.',
+      'Nenhum sinal, pessoa ou emoção deve nos afastar do Deus verdadeiro; o critério é se nos aproxima ou nos afasta dele.',
     ],
     aplicacao:
-      'Hoje, olhe com honestidade para o seu coração: há alguma área “dura”, onde você tem resistido a Deus? Peça a ele que a suavize. Pense também em quem, ao seu redor, está “de fora”: uma pessoa nova na igreja, alguém que mudou de cidade, alguém sozinho. Como você pode acolher essa pessoa? E, no seu momento de adoração, procure ter alegria, e não só rotina.',
+      'Hoje, olhe para as áreas em que você confia só no seu esforço, como o povo no Egito que regava com o pé. Entregue a Deus uma delas. Veja também se a sua adoração tem alegria ou virou só rotina. E teste o que você ouve e lê com a Palavra: o que me aproxima de Deus e o que me afasta? Isso vale para pregações, redes sociais, músicas e conselhos.',
     reflexao:
-      'Deus não busca primeiro o que fazemos por ele, mas o coração que entregamos a ele.',
+      'Quem depende da chuva do céu aprende a olhar para cima todos os dias.',
     perguntas: [
-      'Qual área do meu coração está dura e resistente a Deus?',
-      'Quem na minha convivência é “estrangeiro” e precisa de acolhida?',
-      'Estou vivendo com dependência diária de Deus ou só confiando no meu esforço?',
+      'Em que área eu estou confiando só no meu esforço e não em Deus?',
       'Minha adoração tem alegria ou virou só obrigação?',
+      'Existe algo que eu tenho feito “do meu jeito” e que preciso rever à luz da Palavra?',
+      'O que tenho ouvido ou seguido que me aproxima de Deus? E o que me afasta?',
     ],
     vivendo:
-      'Hoje, faça um gesto concreto de acolhida a alguém que esteja de fora (uma mensagem, um convite, uma conversa). E, no seu momento de oração, inclua uma música ou um agradecimento em voz alta, para colocar alegria na sua adoração.',
+      'No seu momento de oração, inclua uma música ou um agradecimento em voz alta, para colocar alegria na sua adoração. Depois, escolha uma coisa que você tem consumido (uma pregação, um perfil, uma música) e pergunte se ela te aproxima de Deus.',
     oracao:
-      'Senhor, amolece o meu coração naquilo em que ele está duro. Ensina-me a amar quem está de fora, como tu amas. Que eu viva dependendo de ti todos os dias e que a minha adoração tenha alegria verdadeira. Em nome de Jesus, amém.',
+      'Senhor, ensina-me a depender de ti todos os dias, como a terra depende da chuva. Que a minha adoração tenha alegria verdadeira. Guarda o meu coração de tudo o que me afasta de ti, ainda que venha com aparência bonita. Em nome de Jesus, amém.',
   },
 
-  'Dt 13-15': {
-    tema: 'Amor que não se divide e mão que se abre',
+  'Dt 14-17': {
+    tema: 'Filhos de Deus: mão aberta, festa compartilhada e poder debaixo da Palavra',
     contextoHistorico:
-      'No mundo antigo, os reis costumavam firmar tratados de fidelidade com seus súditos, e quem traía era punido severamente. Moisés usa essa linguagem para falar da fidelidade de Israel a Deus, e as penas descritas no capítulo 13 pertencem à lei civil de Israel daquele tempo, que governava uma nação em que a idolatria era vista como traição ao próprio rei. Os capítulos 14 e 15 falam da vida prática do povo: alimentação, dízimos, dívidas e a situação dos mais pobres, muito importantes numa sociedade agrícola em que uma colheita ruim podia arruinar uma família.',
+      'Moisés continua explicando a vida prática do povo na terra: alimentação, ofertas, dívidas, festas, juízes e o futuro rei. Numa sociedade agrícola, uma colheita ruim podia arruinar uma família, e por isso as regras sobre dívidas e sobre os mais pobres eram muito importantes. Os povos vizinhos tinham reis com poder quase absoluto, e a lei de Israel coloca limites para o rei. Em muitas culturas, as festas eram reservadas aos mais ricos, mas em Israel elas eram para todos.',
     contextoBiblico:
-      'Jesus alertou sobre falsos profetas (Mateus 7:15) e disse que os conheceríamos “pelos seus frutos”. Em 1 João 4:1, os cristãos são chamados a “provar os espíritos”. A frase “pobres sempre os tendes convosco” (Mateus 26:11) é uma referência a Deuteronômio 15:11. A lembrança de que Israel foi escravo no Egito aparece de novo como motivo para ser generoso, algo que o Novo Testamento retoma ao falar de generosidade (2 Coríntios 9:7).',
+      'A lista de alimentos de Deuteronômio 14 é parecida com a de Levítico 11. A frase “pobres sempre os tendes convosco” (Mateus 26:11) é uma referência a Deuteronômio 15:11. A Páscoa, as Semanas (Pentecostes) e os Tabernáculos já apareceram em Êxodo 23 e Levítico 23. As regras para o rei (17:14-20) serão uma referência quando o povo pedir um rei, em 1 Samuel 8, e na história de Salomão, que acumulou cavalos, mulheres e ouro (1 Reis 10-11).',
     explicacao: [
-      'Deuteronômio 13: aqui há um alerta sério. Se surgir alguém com sinais e maravilhas que convide o povo a seguir outros deuses, não se deve ouvi-lo, pois “o Senhor vosso Deus vos prova, para saber se amais o Senhor vosso Deus”. O critério não é só o milagre, mas se a mensagem leva para mais perto ou para longe do Deus verdadeiro. O mesmo vale para um amigo próximo ou um familiar. As punições descritas fazem parte da lei civil de Israel, e é importante lê-las sem tirar delas um modelo para hoje. O que continua valendo é o princípio: nenhum sinal, pessoa ou afeto deve nos afastar de Deus. No Novo Testamento, o combate à falsa doutrina se dá com verdade, firmeza e amor.',
-      'Deuteronômio 14: começa dizendo “Filhos sois do Senhor vosso Deus”. Por serem filhos, o povo não deveria fazer cortes no corpo em sinal de luto, como faziam outros povos, pois tinham uma esperança diferente. Depois vem a lista dos animais que podiam ou não ser comidos, parecida com a de Levítico 11, ligada à identidade de Israel como povo separado. Em seguida, o texto trata dos dízimos que o povo trazia ao local de adoração, em forma de festa diante de Deus, e do dízimo do terceiro ano, que era guardado nas cidades para o levita, o estrangeiro, o órfão e a viúva (14:28-29). O cuidado com os vulneráveis estava embutido na vida religiosa do povo.',
-      'Deuteronômio 15: a cada sete anos, as dívidas deviam ser perdoadas, para que ninguém ficasse preso para sempre à pobreza. Deus promete que, se o povo obedecesse, “não haveria pobre entre vocês”, mas reconhece que “pobres nunca deixarão de haver na terra” (15:11) e, por isso, ordena: “abrirás de todo a tua mão”. Moisés alerta contra o coração duro: “não endurecerás o teu coração, nem fecharás a tua mão a teu irmão pobre” (15:7). A mesma generosidade vale para o servo hebreu libertado no sétimo ano: não devia sair de mãos vazias, e o dono devia lhe dar “liberalmente” do que Deus havia abençoado, lembrando que ele mesmo foi libertado do Egito. Esse trecho trata de uma realidade de servidão que existia naquela época, e mostra o cuidado de Deus em limitar abusos e proteger o mais fraco.',
+      'Deuteronômio 14: o capítulo começa com “Filhos sois do Senhor vosso Deus”. Por serem filhos, o povo não deveria fazer cortes no corpo em sinal de luto, como faziam outros povos, pois tinha uma esperança diferente. Depois vem a lista dos animais que podiam ou não ser comidos, ligada à identidade de Israel como povo separado. Em seguida, o texto trata do dízimo trazido ao lugar de adoração, em forma de festa diante de Deus, e do dízimo do terceiro ano, que era guardado nas cidades para o levita, o estrangeiro, o órfão e a viúva (14:28-29). O cuidado com os vulneráveis estava embutido na vida religiosa do povo.',
+      'Deuteronômio 15: a cada sete anos, as dívidas deviam ser perdoadas, para que ninguém ficasse preso para sempre à pobreza. Deus promete que, se o povo obedecesse, não haveria pobre entre eles, mas reconhece que “pobres nunca deixarão de haver na terra” (15:11) e, por isso, ordena: “abrirás de todo a tua mão”. Moisés alerta contra o coração duro: “não endurecerás o teu coração, nem fecharás a tua mão a teu irmão pobre” (15:7). A mesma generosidade vale para o servo hebreu libertado no sétimo ano: não devia sair de mãos vazias, e o dono devia lhe dar “liberalmente” do que Deus havia abençoado, lembrando que ele mesmo foi libertado do Egito. Esse trecho trata de uma realidade de servidão que existia naquela época, e mostra o cuidado de Deus em limitar abusos e proteger o mais fraco.',
+      'Deuteronômio 16: três festas por ano: a Páscoa (lembrando a libertação do Egito), as Semanas (colheita) e os Tabernáculos (cabanas, lembrando o deserto). A orientação central é: “alegrar-te-ás perante o Senhor teu Deus, tu, e teu filho, e tua filha, e teu servo, e tua serva, e o levita, e o estrangeiro, e o órfão, e a viúva” (16:11). A festa era comunitária, e ninguém era deixado de fora. Também é dito: “Ninguém aparecerá vazio diante do Senhor; cada um com o dom da sua mão, conforme a bênção que o Senhor teu Deus te tiver dado”. No fim do capítulo, a orientação aos juízes: “A justiça, somente a justiça seguirás” (16:20), sem aceitar suborno, que “cega os olhos dos sábios”.',
+      'Deuteronômio 17: o culto devia ser feito com o melhor, sem oferecer animais com defeito, e acusações sérias exigiam mais de uma testemunha. Nos casos difíceis, o povo devia procurar os sacerdotes e juízes do lugar escolhido por Deus. Depois, Moisés prevê que um dia o povo pediria um rei “como todas as nações”. Se isso acontecesse, o rei deveria ser escolhido por Deus, não multiplicaria cavalos, mulheres ou riquezas, e deveria escrever para si uma cópia da lei e lê-la todos os dias da vida, “para que o seu coração não se levante sobre os seus irmãos”. O poder só é saudável quando está debaixo da Palavra.',
     ],
     ensinamentos: [
-      'Nenhum sinal, pessoa ou emoção deve nos afastar do Deus verdadeiro; o critério é se nos aproxima ou nos afasta dele.',
-      'Ser filha de Deus muda o jeito de viver o luto e a esperança.',
+      'Ser filha de Deus muda o jeito de viver o luto, a identidade e a esperança.',
       'A vida de fé inclui cuidar dos mais vulneráveis: o estrangeiro, o órfão, a viúva.',
       'Deus se importa com a pobreza e quer que o seu povo tenha mão aberta e coração mole.',
       'Lembrar que fomos libertados nos faz libertar e dar com generosidade.',
+      'Celebrar é uma forma de lembrar o que Deus fez, e ele quer que todos participem da alegria.',
+      'Quem tem poder precisa continuar sob a Palavra de Deus, e a justiça não se compra.',
     ],
     aplicacao:
-      'Hoje, teste o que você ouve e lê com a Palavra: o que me aproxima de Deus e o que me afasta? Isso vale para pregações, redes sociais, músicas e conselhos. E olhe para a sua “mão”: há algo que você tem segurado com medo de faltar? Pense em alguém com uma necessidade real e veja o que pode fazer, mesmo que pequeno. A generosidade começa quando lembramos o quanto já recebemos.',
+      'Olhe para a sua “mão”: há algo que você tem segurado com medo de faltar? Pense em alguém com uma necessidade real e veja o que pode fazer, mesmo que pequeno. Pense também nas “festas” da sua vida com Deus: você tem momentos de celebração e gratidão, ou só de pedidos? E onde você tem algum poder de decisão (na família, no trabalho, na igreja), você leva a Palavra para essas decisões?',
     reflexao:
-      'Quem se lembra do quanto foi libertado aprende a abrir a mão com alegria.',
+      'Quem se lembra do quanto foi libertado aprende a abrir a mão e a convidar todos para a festa.',
     perguntas: [
-      'O que tenho ouvido ou seguido que me aproxima de Deus? E o que me afasta?',
       'Como o fato de ser filha de Deus muda o jeito de eu viver as perdas e as dificuldades?',
       'Existe alguém perto de mim passando necessidade e que eu tenho evitado ver?',
       'Em que área eu estou de “mão fechada” por medo de faltar?',
+      'Quando foi a última vez que eu celebrei com gratidão o que Deus fez, e quem eu posso incluir nessa alegria?',
     ],
     vivendo:
-      'Escolha uma ação concreta de generosidade para hoje: ajudar alguém com um valor, com tempo ou com uma palavra. Antes de agir, ore por quem vai receber. Depois anote como você se sentiu.',
+      'Escolha uma ação concreta de generosidade para hoje: ajudar alguém com um valor, com tempo ou com uma palavra. Antes de agir, ore por quem vai receber. Depois faça uma pequena “festa de gratidão”: uma música, um salmo e cinco coisas pelas quais agradecer.',
     oracao:
-      'Pai, guarda o meu coração de tudo o que me afasta de ti, ainda que venha com aparência bonita. Obrigada por me chamares de filha. Abre a minha mão e amolece o meu coração para quem precisa. Lembra-me sempre de que eu também fui libertada pela tua graça. Em nome de Jesus, amém.',
+      'Pai, obrigada por me chamares de filha. Abre a minha mão e amolece o meu coração para quem precisa. Lembra-me sempre de que eu também fui libertada pela tua graça. Obrigada pelos momentos de alegria em que me ajudas a lembrar das tuas obras. Faze de mim uma pessoa justa e fiel, que decide à luz da tua Palavra. Em nome de Jesus, amém.',
   },
 
-  'Dt 16-18': {
-    tema: 'Festas para lembrar, justiça para proteger e a voz de um profeta maior',
+  'Dt 18-20': {
+    tema: 'Ouvir a voz de Deus, proteger a justiça e não temer na batalha',
     contextoHistorico:
-      'Moisés continua explicando como o povo deveria viver na terra: o calendário das três grandes festas anuais, a escolha de juízes, o cuidado com o culto, o papel do rei, dos sacerdotes e dos profetas. Em muitos povos ao redor, a vida política e religiosa se misturava com adivinhação, magia e consulta aos mortos, para tentar conhecer o futuro. Israel recebe uma alternativa: ouvir a Deus por meio de profetas que ele mesmo levantaria.',
+      'Em muitos povos ao redor de Israel, a vida política e religiosa se misturava com adivinhação, magia e consulta aos mortos, para tentar conhecer o futuro. Israel recebe uma alternativa: ouvir a Deus por meio de profetas que ele mesmo levantaria. Os capítulos 19 e 20 tratam da justiça e da guerra. Numa época em que um parente podia buscar vingança pelo sangue de um morto, as cidades de refúgio e as regras sobre testemunhas ajudavam a evitar injustiças. As regras de guerra do capítulo 20 se aplicam ao contexto daquele tempo.',
     contextoBiblico:
-      'A Páscoa, o Pentecostes (Semanas) e os Tabernáculos já apareceram em Êxodo 23 e Levítico 23. A promessa de um profeta como Moisés (18:15-19) é citada por Pedro em Atos 3:22-23 e por Estêvão em Atos 7:37, aplicada a Jesus. Quando o povo pedir um rei, séculos depois (1 Samuel 8), as regras do capítulo 17 serão uma referência do que se esperava de um rei fiel.',
+      'A promessa de um profeta como Moisés (18:15-19) é citada por Pedro em Atos 3:22-23 e por Estêvão em Atos 7:37, aplicada a Jesus. As cidades de refúgio já apareceram em Números 35, e o cuidado com testemunhas aparece de novo em Mateus 18:16. A frase “olho por olho” (19:21) é retomada por Jesus em Mateus 5:38-39, quando ele ensina a ir além da retribuição. O consolo “o Senhor vosso Deus vai convosco” (20:4) lembra promessas como Josué 1:9 e Mateus 28:20.',
     explicacao: [
-      'Deuteronômio 16: três festas por ano: a Páscoa (lembrando a libertação do Egito), as Semanas (colheita) e os Tabernáculos (cabanas, lembrando o deserto). A orientação central é: “alegrar-te-ás perante o Senhor teu Deus, tu, e teu filho, e tua filha, e teu servo, e tua serva, e o levita, e o estrangeiro, e o órfão, e a viúva” (16:11). A festa era comunitária, e ninguém era deixado de fora. Também é dito: “Ninguém aparecerá vazio diante do Senhor; cada um com o dom da sua mão, conforme a bênção que o Senhor teu Deus te tiver dado”. Depois vem uma orientação sobre os juízes: “A justiça, somente a justiça seguirás” (16:20), sem aceitar suborno, que “cega os olhos dos sábios”.',
-      'Deuteronômio 17: a primeira parte reforça que o culto devia ser feito com o melhor, sem oferecer animais com defeito, e que acusações sérias exigiam mais de uma testemunha. Depois, quando houvesse casos difíceis, o povo devia procurar os sacerdotes e juízes do lugar escolhido por Deus. Em seguida, Moisés prevê que um dia o povo pediria um rei “como todas as nações”. Se isso acontecesse, o rei deveria ser escolhido por Deus, não multiplicaria cavalos, mulheres ou riquezas, e deveria escrever para si uma cópia da lei e lê-la todos os dias da vida, “para que o seu coração não se levante sobre os seus irmãos”. O poder só é saudável quando está debaixo da Palavra.',
-      'Deuteronômio 18: os sacerdotes e levitas não teriam herança de terra, pois “o Senhor é a sua herança”. Depois, Moisés proíbe práticas das nações vizinhas: adivinhação, feitiçaria, consulta a mortos. Em vez disso, Deus promete: “O Senhor teu Deus te levantará um profeta do meio de ti, de teus irmãos, como eu; a ele ouvireis” (18:15). Esse profeta falaria as palavras de Deus. Os cristãos reconhecem nesse texto uma promessa que se cumpre em Jesus, mas o texto também serve para as épocas seguintes: um profeta verdadeiro é reconhecido quando o que fala se cumpre e quando leva o povo ao Deus verdadeiro.',
+      'Deuteronômio 18: os sacerdotes e levitas não teriam herança de terra, pois “o Senhor é a sua herança”, e o povo devia cuidar deles. Depois, Moisés proíbe práticas das nações vizinhas: adivinhação, feitiçaria, consulta a mortos. Em vez disso, Deus promete: “O Senhor teu Deus te levantará um profeta do meio de ti, de teus irmãos, como eu; a ele ouvireis” (18:15). Esse profeta falaria as palavras de Deus. Os cristãos reconhecem nesse texto uma promessa que se cumpre em Jesus, mas o texto também serve para as épocas seguintes: um profeta verdadeiro é reconhecido quando o que fala se cumpre e quando leva o povo ao Deus verdadeiro.',
+      'Deuteronômio 19: Israel devia separar três cidades de refúgio do lado de cá do Jordão (somando-se às três do outro lado), com caminhos preparados, para que quem matasse sem querer pudesse fugir e ser protegido até o julgamento. A intenção era evitar que sangue inocente fosse derramado e que o povo fosse culpado por isso. O capítulo também proíbe mudar os marcos das terras, que eram a herança das famílias, e exige pelo menos duas ou três testemunhas para condenar alguém. Quem desse falso testemunho sofreria o que queria para o outro. A regra do “olho por olho” funcionava como um limite: a punição não podia passar do dano, o que freava a vingança sem controle.',
+      'Deuteronômio 20: antes da batalha, o sacerdote devia animar o povo: “Ouve, ó Israel, hoje chegais à peleja contra os vossos inimigos; não desfaleça o vosso coração, não temais... porque o Senhor vosso Deus é o que vai convosco” (20:3-4). Depois, os oficiais dispensavam quem tivesse construído uma casa e ainda não a estreara, plantado uma vinha e não colhido, ficado noivo e não casado, ou quem tivesse medo, para que o medo dele não contagiasse os irmãos. Para cidades distantes, devia-se primeiro oferecer paz. Para as cidades de Canaã, valia a ordem específica de Deus, ligada ao juízo sobre aquelas culturas, que deve ser lida no seu contexto histórico e não como modelo de conduta hoje. Mesmo na guerra, havia um cuidado com a criação: as árvores frutíferas não deviam ser cortadas.',
     ],
     ensinamentos: [
-      'Celebrar é uma forma de lembrar o que Deus fez, e ele quer que todos participem da alegria, inclusive os mais vulneráveis.',
-      'A justiça não se compra nem se inclina por interesse: “a justiça, somente a justiça”.',
-      'Quem tem poder precisa continuar sob a Palavra de Deus, lendo-a e obedecendo-a todos os dias.',
       'Quem serve a Deus tem nele a sua herança, e isso vale mais do que qualquer terra.',
-      'Deus se comunica com o seu povo por meio da sua palavra, sem precisarmos de adivinhações ou atalhos misteriosos.',
+      'Deus fala ao seu povo por meio da sua palavra, e não precisamos de adivinhações ou atalhos misteriosos.',
+      'Deus se importa com a justiça: proteção para quem errou sem querer, testemunhas verdadeiras e respeito à herança dos outros.',
+      'A palavra de Deus no meio da batalha é: “não temas, eu vou contigo”.',
+      'Até no conflito há limites: o cuidado com a vida e com a criação mostra o coração de Deus.',
     ],
     aplicacao:
-      'Hoje, pense nas “festas” da sua vida com Deus: você tem momentos de celebração e gratidão, ou só de pedidos? Marque algo simples para agradecer, em voz alta ou com a família. Considere também onde você tem poder de decisão (na família, no trabalho, na igreja): você leva a Palavra para essas decisões? E, quando quiser orientação, procure primeiro a Bíblia, a oração e conselhos sábios, e não atalhos duvidosos.',
+      'Quando você precisar de direção, procure primeiro a Bíblia, a oração e conselhos sábios, e não atalhos duvidosos. Pense também numa “batalha” que você está enfrentando: o medo está falando mais alto do que a promessa de que Deus vai com você? E olhe para a sua forma de falar sobre os outros: você tem sido uma testemunha verdadeira e justa, ou costuma passar adiante o que ouviu sem confirmar?',
     reflexao:
-      'Quem celebra lembra, quem lembra confia, e quem confia procura a voz de Deus.',
+      'Na batalha, a voz que mais precisamos ouvir é a de quem vai conosco.',
     perguntas: [
-      'Quando foi a última vez que eu celebrei com gratidão o que Deus fez?',
-      'Como posso incluir quem está sozinho na minha alegria?',
-      'Onde eu exerço alguma influência, e como a Palavra de Deus pode orientar essas decisões?',
       'Quando preciso de direção, onde eu procuro primeiro?',
+      'Qual batalha eu estou enfrentando e em que o medo está maior que a promessa?',
+      'Tenho sido justa ao falar de outras pessoas, ou repito o que ouvi sem conferir?',
+      'Existe alguém que errou sem má intenção e que precisa de um “refúgio” da minha parte?',
     ],
     vivendo:
-      'Crie uma pequena “festa de gratidão” para hoje: escolha uma música, leia um salmo de louvor e agradeça por pelo menos cinco coisas. Se possível, convide alguém para fazer isso com você, de perto ou por chamada.',
+      'Escolha Deuteronômio 20:4 e leia em voz alta três vezes hoje, pensando numa situação difícil. Depois, antes de comentar algo sobre alguém, pergunte a si mesma: “Isso é verdade? Isso ajuda?”',
     oracao:
-      'Senhor, obrigada pelos momentos de alegria que me dás para lembrar das tuas obras. Faze de mim uma pessoa justa e fiel, que decide à luz da tua Palavra. Obrigada porque falas ao teu povo e porque enviaste Jesus, o profeta maior. Ensina-me a ouvir a tua voz. Em nome de Jesus, amém.',
+      'Senhor, obrigada porque falas ao teu povo e porque enviaste Jesus, o profeta maior. Ensina-me a ouvir a tua voz. Quando o medo vier, lembra-me de que tu vais comigo. Faze de mim uma pessoa justa nas palavras e acolhedora com quem erra. Em nome de Jesus, amém.',
   },
 }
