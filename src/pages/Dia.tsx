@@ -10,6 +10,8 @@ import { LIVROS, PLANO, rotulo } from '../lib/plano'
 import { textoCapitulo, traducaoEfetiva } from '../lib/biblia'
 import { buscarDevocional } from '../data/devocionais'
 import { dataLonga, somarDias } from '../lib/datas'
+import NotaDeApoio from '../components/NotaDeApoio'
+
 
 interface Fav {
   tipo: 'versiculo' | 'capitulo' | 'dia'
@@ -22,12 +24,14 @@ interface Fav {
 }
 type Favoritos = ReturnType<typeof useColecao<Fav>>
 
+
 const CORES = [
   { id: 'rosa', bg: '#f9dde2' },
   { id: 'ouro', bg: '#f3e5c3' },
   { id: 'verde', bg: '#dcead8' },
   { id: 'azul', bg: '#dbe4f2' },
 ]
+
 
 function TextoBiblico({ traducao, livroIdx, cap, favoritos }: {
   traducao: string; livroIdx: number; cap: number; favoritos: Favoritos
@@ -37,10 +41,12 @@ function TextoBiblico({ traducao, livroIdx, cap, favoritos }: {
   const [aberto, setAberto] = useState<number | null>(null)
   const [comentario, setComentario] = useState('')
 
+
   useEffect(() => {
     setVersos(null); setErro(''); setAberto(null)
     textoCapitulo(traducao, livroIdx, cap).then(setVersos).catch(e => setErro(e.message))
   }, [traducao, livroIdx, cap])
+
 
   const livro = LIVROS[livroIdx]
   const refCap = `${livro.abrev} ${cap}`
@@ -48,16 +54,19 @@ function TextoBiblico({ traducao, livroIdx, cap, favoritos }: {
   const favCap = itens.find(f => f.ref === refCap)
   const mapa = new Map(itens.map(f => [f.ref, f]))
 
+
   function abrirVerso(n: number) {
     if (aberto === n) return setAberto(null)
     setAberto(n)
     setComentario(mapa.get(`${livro.abrev} ${cap}:${n}`)?.comentario ?? '')
   }
 
+
   function favoritarCapitulo() {
     if (favCap) return favoritos.excluir(favCap.id)
     favoritos.adicionar({ tipo: 'capitulo', ref: refCap, rotulo: `${livro.nome} ${cap}`, traducao })
   }
+
 
   function marcarVerso(n: number, cor: string) {
     const ref = `${livro.abrev} ${cap}:${n}`
@@ -73,6 +82,7 @@ function TextoBiblico({ traducao, livroIdx, cap, favoritos }: {
     setAberto(null)
   }
 
+
   return (
     <section>
       <div className="flex items-center justify-between gap-2">
@@ -83,6 +93,7 @@ function TextoBiblico({ traducao, livroIdx, cap, favoritos }: {
       </div>
       {erro && <p className="text-sm text-red-500">{erro}</p>}
       {!versos && !erro && <p className="text-sm text-tinta/50">Carregando…</p>}
+
 
       <div className="mt-2 space-y-1 leading-relaxed">
         {versos?.map((v, i) => {
@@ -98,6 +109,7 @@ function TextoBiblico({ traducao, livroIdx, cap, favoritos }: {
                 <sup className="mr-1 text-xs text-ouro">{n}</sup>{v}
                 {fav?.comentario && <span className="ml-1 text-xs text-blush-500">✎</span>}
               </p>
+
 
               {aberto === n && (
                 <div className="mx-2 mt-1 space-y-2 rounded-xl bg-blush-50 p-3 text-sm">
@@ -132,6 +144,7 @@ function TextoBiblico({ traducao, livroIdx, cap, favoritos }: {
   )
 }
 
+
 function AnotacaoDia({ dia }: { dia: number }) {
   const { user } = useAuth()
   const ref = doc(db, 'users', user!.uid, 'notas', `dia-${dia}`)
@@ -139,9 +152,11 @@ function AnotacaoDia({ dia }: { dia: number }) {
   const [estado, setEstado] = useState<'carregando' | 'ok' | 'salvando' | 'erro'>('carregando')
   const timer = useRef<number>(undefined)
 
+
   useEffect(() => {
     getDoc(ref).then(s => { setTexto(s.exists() ? s.data().texto : ''); setEstado('ok') }).catch(() => setEstado('erro'))
   }, [])
+
 
   function aoDigitar(v: string) {
     setTexto(v); setEstado('salvando')
@@ -151,6 +166,7 @@ function AnotacaoDia({ dia }: { dia: number }) {
         .then(() => setEstado('ok')).catch(() => setEstado('erro'))
     }, 800)
   }
+
 
   return (
     <div className="card">
@@ -167,12 +183,14 @@ function AnotacaoDia({ dia }: { dia: number }) {
   )
 }
 
+
 const Secao = ({ titulo, children }: { titulo: string; children: React.ReactNode }) => (
   <section className="space-y-2">
     <h3 className="text-xs font-semibold uppercase tracking-widest text-ouro">{titulo}</h3>
     {children}
   </section>
 )
+
 
 export default function Dia() {
   // todos os hooks ficam aqui em cima, antes de qualquer return
@@ -182,8 +200,10 @@ export default function Dia() {
   const { feitos, alternar } = useProgresso()
   const favoritos = useColecao<Fav>('favoritos')
 
+
   const info = PLANO[dia - 1]
   if (!info) return <Navigate to="/plano" replace />
+
 
   const traducao = traducaoEfetiva(perfil!.traducao)
   const dev = buscarDevocional(info)
@@ -191,10 +211,12 @@ export default function Dia() {
   const caps = Array.from({ length: info.capFim - info.capIni + 1 }, (_, i) => info.capIni + i)
   const favDia = favoritos.itens?.find(f => f.ref === `dia ${dia}`)
 
+
   function favoritarDia() {
     if (favDia) return favoritos.excluir(favDia.id)
     favoritos.adicionar({ tipo: 'dia', ref: `dia ${dia}`, rotulo: `Dia ${dia} · ${dev?.tema ?? rotulo(info)}` })
   }
+
 
   return (
     <div className="space-y-6" key={dia}>
@@ -204,12 +226,14 @@ export default function Dia() {
         <p className="text-sm text-tinta/60">Leitura: {rotulo(info)} · {traducao.toUpperCase()}</p>
       </header>
 
+
       <div className="card space-y-8">
         {caps.map(c => (
           <TextoBiblico key={c} traducao={traducao} livroIdx={info.livroIdx} cap={c} favoritos={favoritos} />
         ))}
         <p className="text-xs text-tinta/50">Toque em um versículo para marcar com cor, favoritar ou comentar.</p>
       </div>
+
 
       {dev ? (
         <div className="card space-y-6">
@@ -226,7 +250,7 @@ export default function Dia() {
           </Secao>
           <Secao titulo="Vivendo a Palavra"><p>{dev.vivendo}</p></Secao>
           <Secao titulo="Momento de oração"><p className="italic">{dev.oracao}</p></Secao>
-          {dev.revisadoPor && <p className="text-xs text-tinta/50">Revisado por {dev.revisadoPor}</p>}
+          <NotaDeApoio revisadoPor={dev.revisadoPor} />
           <button className="btn-suave" onClick={favoritarDia}>
             {favDia ? '★ Remover dos favoritos' : '☆ Favoritar este devocional'}
           </button>
@@ -238,11 +262,14 @@ export default function Dia() {
         </div>
       )}
 
+
       <AnotacaoDia key={`n${dia}`} dia={dia} />
+
 
       <button onClick={() => alternar(dia)} className={concluido ? 'btn-suave w-full' : 'btn w-full'}>
         <Check size={18} /> {concluido ? 'Concluído — toque para desmarcar' : 'Marcar dia como concluído'}
       </button>
+
 
       <nav className="flex justify-between">
         {dia > 1 ? <Link className="btn-suave" to={`/dia/${dia - 1}`}><ChevronLeft size={16} /> Dia anterior</Link> : <span />}
