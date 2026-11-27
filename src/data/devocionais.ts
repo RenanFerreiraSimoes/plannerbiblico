@@ -11,6 +11,7 @@ import { NUMEROS_2 } from './estudos/numeros2'
 import { DEUTERONOMIO } from './estudos/deuteronomio'
 import { DEUTERONOMIO_2 } from './estudos/deuteronomio2'
 import { JOSUE } from './estudos/josue'
+import { JUIZES } from './estudos/juizes'
 
 export type { Devocional }
 
@@ -18,7 +19,7 @@ export type { Devocional }
 // const TODOS = { ...GENESIS, ...EXODO }
 const TODOS: Record<string, Devocional> = { ...GENESIS, ...GENESIS_2, ...EXODO, ...EXODO_2,
   ...LEVITICO, ...LEVITICO_2, ...NUMEROS, ...NUMEROS_2, ...DEUTERONOMIO, ...DEUTERONOMIO_2,
-  ...JOSUE }
+  ...JOSUE, ...JUIZES }
 
 // "Gn 4-6" (vários capítulos) ou "Rt 2" (um capítulo)
 export function chavePassagem(d: DiaPlano) {
